@@ -26,6 +26,6 @@ io.on('connection', socket => {
     })
 });
 
-server.listen(8181, () => console.log('server is running'));
+server.listen(process.env.PORT || 8181, () => console.log('server is running'));
 
 
